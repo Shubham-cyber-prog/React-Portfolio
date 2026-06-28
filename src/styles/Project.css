@@ -123,10 +123,3 @@
         padding: 18px;
     }
 }
-.card {
-    background: var(--bg-tertiary);
-    border-radius: 16px;
-    overflow: hidden;
-    border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
-}

@@ -1,5 +1,6 @@
-import React from 'react'
+import About from './components/About'
 import Contact from './components/Contact'
+import Experience from './components/Experience'
 import Home from './components/Home'
 import Projects from './components/Projects'
 import Skill from './components/Skill'
@@ -9,7 +10,9 @@ const App = () => {
   return (
     <div>
       <Home />
-      <Skill />
+      <About />
+        <Skill />
+      <Experience />
       <Projects />
       <Contact />
     </div>

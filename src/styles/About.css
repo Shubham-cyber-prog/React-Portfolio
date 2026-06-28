@@ -1,0 +1,116 @@
+.about {
+	padding: 96px 20px;
+    background:black;
+}
+
+.about__wrapper {
+	max-width: 1180px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+	gap: 32px;
+	align-items: start;
+}
+
+.about__content {
+	max-width: 840px;
+}
+
+.about__heading {
+	margin: 0 0 18px;
+	font-size: clamp(2rem, 4vw, 3.25rem);
+	font-weight: 800;
+	letter-spacing: -0.03em;
+	color: #f8fafc;
+}
+
+.about__text {
+	margin: 0;
+	font-size: 1.05rem;
+	line-height: 1.8;
+	color: #f4f6f9;
+	max-width: 70ch;
+}
+
+.about__stats {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 18px;
+	padding: 22px;
+	border-radius: 28px;
+	border: 1px solid rgba(148, 163, 184, 0.18);
+	background:
+		linear-gradient(180deg, rgba(15, 23, 42, 0.92), rgba(2, 6, 23, 0.94));
+	box-shadow: 0 24px 60px rgba(2, 6, 23, 0.45);
+	backdrop-filter: blur(14px);
+	position: relative;
+	overflow: hidden;
+}
+
+.about__stats::before {
+	content: 'Key Achievements';
+	display: flex;
+	align-items: center;
+	padding: 0 0 18px;
+	grid-column: 1 / -1;
+	font-size: 0.82rem;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: #fefeff;
+}
+
+.about__stat-card {
+	padding: 22px;
+	border-radius: 20px;
+	border: 1px solid rgba(148, 163, 184, 0.18);
+
+
+	backdrop-filter: blur(10px);
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.about__stat-card:hover {
+	transform: translateY(-6px);
+	border-color: rgba(13, 9, 239, 0.45);
+
+}
+
+.about__stat-number {
+	font-size: 2rem;
+	font-weight: 800;
+	letter-spacing: -0.04em;
+	color: #323bf2a0;
+}
+
+.about__stat-label {
+	color: #8fa6c7;
+	font-size: 0.95rem;
+	font-weight: 600;
+}
+
+@media (max-width: 640px) {
+	.about {
+		padding: 72px 16px;
+	}
+
+	.about__wrapper {
+		grid-template-columns: 1fr;
+	}
+
+	.about__stats {
+		grid-template-columns: 1fr;
+		padding: 18px;
+	}
+
+	.about__heading {
+		margin-bottom: 14px;
+	}
+
+	.about__stat-card {
+		padding: 18px;
+	}
+}
